@@ -1,0 +1,72 @@
+:root {
+  --textColor: #464646;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+}
+body {
+  background: url(./assets/Rectangle.png) no-repeat center center fixed;
+  background-size: cover;
+}
+aside {
+  padding: 50px;
+}
+.navbar {
+  display: flex;
+  width: 100%;
+  font-size: 1em;
+  height: 10vh;
+  padding: 10px;
+}
+.navbar div {
+  padding: 10px;
+  color: var(--textColor);
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.navbar ul {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+}
+aside {
+  width: 100%;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+}
+aside div {
+  color: var(--textColor);
+  width: 50%;
+}
+aside img {
+  width: 60vh;
+  height: 60vh;
+}
+span {
+  display: block;
+  white-space: nowrap;
+  border-right: 4px solid;
+  width: 19ch;
+  animation: typing 2s steps(19), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
