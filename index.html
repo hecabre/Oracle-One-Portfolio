@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portafolio</title>
   </head>
   <body>
@@ -36,21 +37,114 @@
           </h1>
           <p class="descripition-text" id="descripition-text">
             I'm a Computer Engineering student at the National Polytechnic
-            Institute, I 'm currently participating in the project Oracle ONE with
-            Alura Latam, in addition to participating in the program Launch X
-            LATAM given by Microsoft and Virtual Innovation.
+            Institute, I 'm currently participating in the project Oracle ONE
+            with Alura Latam, in addition to participating in the program Launch
+            X LATAM given by Microsoft and Virtual Innovation.
           </p>
         </div>
         <div class="profile_img">
-          <div class="person_img"></div>
+          <div
+            class="person_img"
+            data-aos="fade-left"
+            data-aos-id="super-duper"
+            data-aos-duration="3000"
+          ></div>
         </div>
       </aside>
-      <section class="about-section">
-        <div>
-          <p></p>
+      <section class="about-section" data-aos="flip-up">
+        <h2>Skills</h2>
+        <div class="container">
+          <section class="skill-container">
+            <h3>Node JS</h3>
+            <img
+              src="./assets/nodejs-icon.svg"
+              alt="nodejs_icon"
+              class="img-skill"
+            />
+          </section>
+          <section class="skill-container">
+            <h3>Tailwind</h3>
+            <img
+              src="./assets/tailwind-css-2.svg"
+              alt="tailwind_icon"
+              class="img-skill"
+            />
+          </section>
+          <section class="skill-container">
+            <h3>Javascript</h3>
+            <img
+              src="./assets/logo-javascript.svg"
+              alt="js_icon"
+              class="img-skill"
+            />
+          </section>
+          <section class="skill-container">
+            <h3>React</h3>
+            <img
+              src="./assets/react-2.svg"
+              alt="reactjs_icon"
+              class="img-skill"
+            />
+          </section>
+          <section class="skill-container">
+            <h3>Python</h3>
+            <img
+              src="./assets/python-5.svg"
+              alt="pythonjs_icon"
+              class="img-skill"
+            />
+          </section>
+          <section class="skill-container">
+            <h3>Vue</h3>
+            <img
+              src="./assets/vue-js-1.svg"
+              alt="vuejs_icon"
+              class="img-skill"
+            />
+          </section>
+          <section class="skill-container">
+            <h3>CSS</h3>
+            <img src="./assets/css-3.svg" alt="css_icon" class="img-skill" />
+          </section>
+          <section class="skill-container">
+            <h3>Html</h3>
+            <img src="./assets/html-1.svg" alt="html_icon" class="img-skill" />
+          </section>
+          <section class="skill-container">
+            <h3>Git</h3>
+            <img
+              src="./assets/git-icon.svg"
+              alt="html_icon"
+              class="img-skill"
+            />
+          </section>
+          <section class="skill-container">
+            <h3>npm</h3>
+            <img src="./assets/npm.svg" alt="html_icon" class="img-skill" />
+          </section>
+          <!-- <p>
+            Hello, I'm Aaron Hernandez Cabrera, a passionate 19-year-old student
+            of computer engineering at UPIICSA, Mexico. I discovered my passion
+            for programming during high school, and since then, I have been
+            dedicating time and effort to enhance my skills in this field. With
+            2 years of programming experience, I consider myself a passionate,
+            dedicated, and curious individual. My goal is to apply my knowledge
+            and skills in a dynamic environment, collaborate on exciting
+            projects, and continue learning from experienced professionals. I
+            always seek to tackle new challenges and find creative solutions
+            through code. I'm excited about the opportunity to be part of a team
+            that shares my passion for technology and programming. If you'd like
+            to learn more about my work and projects, I invite you to explore my
+            portfolio website. Thank you for your attention and consideration!
+          </p> -->
         </div>
+        <div class="technologies"></div>
       </section>
     </main>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./scripts.js"></script>
   </body>
-  <script src="./scripts.js"></script>
 </html>
