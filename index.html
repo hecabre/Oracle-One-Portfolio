@@ -11,36 +11,76 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portafolio</title>
   </head>
   <body>
     <header>
       <nav class="navbar">
-        <div>Aaron Hernandez</div>
-        <div>
-          <ul>
-            <li>Contact</li>
-            <li>Technologies</li>
-            <li>Hobbies</li>
-            <li>Formation</li>
-            <li>Proyects</li>
-          </ul>
+        <div class="logo">
+          <a href="#">Aaron</a>
+        </div>
+        <ul class="links">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a onclick="redirectAbout()">About</a>
+          </li>
+          <li>
+            <a href="about">Hobbies</a>
+          </li>
+          <li>
+            <a onclick="redirectSkills()">Skills</a>
+          </li>
+        </ul>
+        <a href="#" class="action_button">Contact</a>
+        <div class="toggle-btn">
+          <i class="fa fa-bars"></i>
         </div>
       </nav>
+      <ul class="dropdown_menu">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a onclick="redirectAbout()">About</a>
+        </li>
+        <li>
+          <a onclick="redirectAbout()">Hobbies</a>
+        </li>
+        <li>
+          <a onclick="redirectSkills()">Skills</a>
+        </li>
+        <li>
+          <a class="action_button">Contact</a>
+        </li>
+      </ul>
     </header>
+
+    <!-- Presentation -->
     <main>
       <aside>
-        <div class="description">
+        <div
+          class="description"
+          data-aos="fade-right"
+          data-aos-id="super-duper"
+          data-aos-duration="2000"
+        >
           <h1 class="title-text">
             Hi, I'm Aaron <span class="professions">Front End Developer</span>
           </h1>
           <p class="descripition-text" id="descripition-text">
-            I'm a Computer Engineering student at the National Polytechnic
-            Institute, I 'm currently participating in the project Oracle ONE
-            with Alura Latam, in addition to participating in the program Launch
-            X LATAM given by Microsoft and Virtual Innovation.
+            Computer Engineering student at the National Polytechnic Institute.
+            Currently, participating in the Oracle ONE project with Alura Latam,
+            in addition to having been part of the Launch X LATAM program
+            offered by Microsoft and Virtual Innovation.
           </p>
+          <button class="button-warning">Contact</button>
         </div>
         <div class="profile_img">
           <div
@@ -51,94 +91,170 @@
           ></div>
         </div>
       </aside>
-      <section class="about-section" data-aos="flip-up">
-        <h2>Skills</h2>
+
+      <!-- Skills section -->
+      <section
+        class="about-section"
+        data-aos="zoom-in-up"
+        data-aos-duration="2000"
+      >
+        <h2 class="title-skills">Skills</h2>
         <div class="container">
-          <section class="skill-container">
-            <h3>Node JS</h3>
+          <section class="skill-container" id="skills-section">
             <img
-              src="./assets/nodejs-icon.svg"
+              src="./assets/nodejs-icon.webp"
               alt="nodejs_icon"
               class="img-skill"
             />
+            <h3>Node JS</h3>
           </section>
           <section class="skill-container">
-            <h3>Tailwind</h3>
             <img
               src="./assets/tailwind-css-2.svg"
               alt="tailwind_icon"
               class="img-skill"
             />
+            <h3>Tailwind</h3>
           </section>
           <section class="skill-container">
-            <h3>Javascript</h3>
             <img
               src="./assets/logo-javascript.svg"
               alt="js_icon"
               class="img-skill"
             />
+            <h3>Javascript</h3>
           </section>
           <section class="skill-container">
-            <h3>React</h3>
             <img
               src="./assets/react-2.svg"
               alt="reactjs_icon"
               class="img-skill"
             />
+            <h3>React</h3>
           </section>
           <section class="skill-container">
-            <h3>Python</h3>
             <img
               src="./assets/python-5.svg"
               alt="pythonjs_icon"
               class="img-skill"
             />
+            <h3>Python</h3>
           </section>
           <section class="skill-container">
-            <h3>Vue</h3>
             <img
               src="./assets/vue-js-1.svg"
               alt="vuejs_icon"
               class="img-skill"
             />
+            <h3>Vue</h3>
           </section>
           <section class="skill-container">
-            <h3>CSS</h3>
             <img src="./assets/css-3.svg" alt="css_icon" class="img-skill" />
+            <h3>CSS</h3>
           </section>
           <section class="skill-container">
-            <h3>Html</h3>
             <img src="./assets/html-1.svg" alt="html_icon" class="img-skill" />
+            <h3>Html</h3>
           </section>
           <section class="skill-container">
-            <h3>Git</h3>
             <img
               src="./assets/git-icon.svg"
               alt="html_icon"
               class="img-skill"
             />
+            <h3>Git</h3>
           </section>
           <section class="skill-container">
-            <h3>npm</h3>
             <img src="./assets/npm.svg" alt="html_icon" class="img-skill" />
+            <h3>npm</h3>
           </section>
-          <!-- <p>
-            Hello, I'm Aaron Hernandez Cabrera, a passionate 19-year-old student
-            of computer engineering at UPIICSA, Mexico. I discovered my passion
-            for programming during high school, and since then, I have been
-            dedicating time and effort to enhance my skills in this field. With
-            2 years of programming experience, I consider myself a passionate,
-            dedicated, and curious individual. My goal is to apply my knowledge
-            and skills in a dynamic environment, collaborate on exciting
-            projects, and continue learning from experienced professionals. I
-            always seek to tackle new challenges and find creative solutions
-            through code. I'm excited about the opportunity to be part of a team
-            that shares my passion for technology and programming. If you'd like
-            to learn more about my work and projects, I invite you to explore my
-            portfolio website. Thank you for your attention and consideration!
-          </p> -->
         </div>
-        <div class="technologies"></div>
+      </section>
+      <!-- About section -->
+      <section class="about-me" data-aos="fade-up">
+        <h2 class="about-title">About me</h2>
+        <p>
+          Hello, I'm Aaron Hernandez Cabrera, a passionate 19-year-old student
+          of computer engineering at UPIICSA, Mexico. My passion for programming
+          was discovered during high school. With 2 years of programming
+          experience, I consider myself a passionate, dedicated, and curious
+          individual. My goal is to apply my knowledge and skills in a dynamic
+          environment, collaborate on exciting projects, and continue learning
+          from experienced professionals. I always seek to tackle new challenges
+          and find creative solutions through code. I'm excited about the
+          opportunity to be part of a team that shares my passion for technology
+          and programming. If you'd like to learn more about my work and
+          projects.
+        </p>
+        <div class="hobbie-container">
+          <div class="hobbie-card">
+            <h3>Basketball</h3>
+            <img
+              src="./assets/basketball-svgrepo-com (1).svg"
+              alt="basketball_logo"
+              class="img-hobbie"
+            />
+          </div>
+          <div class="hobbie-card">
+            <h3>Music</h3>
+            <img
+              src="./assets/music-party-svgrepo-com (1).svg"
+              alt="music_logo"
+              class="img-hobbie"
+            />
+          </div>
+          <div class="hobbie-card">
+            <h3>Gardering</h3>
+            <img
+              src="./assets/plants-ecologism-svgrepo-com (1).svg"
+              alt="plants_logo"
+              class="img-hobbie"
+            />
+          </div>
+          <div class="hobbie-card">
+            <h3>Video</h3>
+            <img
+              src="./assets/video-svgrepo-com (1).svg"
+              alt="video_logo"
+              class="img-hobbie"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- FORMATION SECTION -->
+      <section class="formation-container">
+        <div class="formation-card">
+          <p>Upiicsa</p>
+          <img
+            src="./assets/one.png"
+            alt="oracle-one-logo"
+            class="img-formation"
+          />
+        </div>
+        <div class="formation-card">
+          <p>Upiicsa</p>
+          <img
+            src="./assets/launchx.jpg"
+            alt="oracle-one-logo"
+            class="img-formation"
+          />
+        </div>
+        <div class="formation-card">
+          <p>Upiicsa</p>
+          <img
+            src="./assets/UPIICSA.png"
+            alt="upiicsa-logo"
+            class="img-formation"
+          />
+        </div>
+        <div class="formation-card">
+          <p>Upiicsa</p>
+          <img
+            src="./assets/cecyt.png"
+            alt="oracle-one-logo"
+            class="img-formation"
+          />
+        </div>
       </section>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
