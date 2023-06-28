@@ -11,6 +11,16 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap"
       rel="stylesheet"
     />
+    <script
+      src="https://kit.fontawesome.com/ad7738c81d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -26,38 +36,40 @@
         </div>
         <ul class="links">
           <li>
-            <a href="#">Home</a>
+            <a onclick="redirectHome()">Home</a>
           </li>
           <li>
             <a onclick="redirectAbout()">About</a>
           </li>
           <li>
-            <a href="about">Hobbies</a>
+            <a onclick="redirectProjects()">Projects</a>
           </li>
           <li>
             <a onclick="redirectSkills()">Skills</a>
           </li>
         </ul>
-        <a href="#" class="action_button">Contact</a>
+        <a href="#" class="action_button" onclick="redirectContact()"
+          >Contact</a
+        >
         <div class="toggle-btn">
           <i class="fa fa-bars"></i>
         </div>
       </nav>
       <ul class="dropdown_menu">
         <li>
-          <a href="#">Home</a>
+          <a onclick="redirectHome()">Home</a>
         </li>
         <li>
           <a onclick="redirectAbout()">About</a>
         </li>
         <li>
-          <a onclick="redirectAbout()">Hobbies</a>
+          <a onclick="redirectProjects()">Projects</a>
         </li>
         <li>
           <a onclick="redirectSkills()">Skills</a>
         </li>
         <li>
-          <a class="action_button">Contact</a>
+          <a class="action_button" onclick="redirectContact()">Contact</a>
         </li>
       </ul>
     </header>
@@ -80,7 +92,17 @@
             in addition to having been part of the Launch X LATAM program
             offered by Microsoft and Virtual Innovation.
           </p>
-          <button class="button-warning">Contact</button>
+          <ul class="social-media-container">
+            <li class="social-media-icon">
+              <a> <i class="fa-brands fa-linkedin"></i></a>
+            </li>
+            <li class="social-media-icon">
+              <a> <i class="fa-brands fa-github"></i></a>
+            </li>
+          </ul>
+          <button class="button-warning" onclick="redirectContact()">
+            Contact
+          </button>
         </div>
         <div class="profile_img">
           <div
@@ -221,41 +243,147 @@
           </div>
         </div>
       </section>
-      <!-- FORMATION SECTION -->
-      <section class="formation-container">
-        <div class="formation-card">
-          <p>Upiicsa</p>
-          <img
-            src="./assets/one.png"
-            alt="oracle-one-logo"
-            class="img-formation"
-          />
-        </div>
-        <div class="formation-card">
-          <p>Upiicsa</p>
-          <img
-            src="./assets/launchx.jpg"
-            alt="oracle-one-logo"
-            class="img-formation"
-          />
-        </div>
-        <div class="formation-card">
-          <p>Upiicsa</p>
-          <img
-            src="./assets/UPIICSA.png"
-            alt="upiicsa-logo"
-            class="img-formation"
-          />
-        </div>
-        <div class="formation-card">
-          <p>Upiicsa</p>
-          <img
-            src="./assets/cecyt.png"
-            alt="oracle-one-logo"
-            class="img-formation"
-          />
+      <section class="projects">
+        <div class="projects-title">Projects</div>
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="./assets/palettewizard.png"
+                alt="project-img"
+                class="project-img"
+                data-aos-duration="2000"
+                data-aos="fade-right"
+              />
+            </div>
+            <div
+              class="project-description"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
+              <h3>Palette Wizard</h3>
+              <p>
+                Full stack application made in React and Tailwind CSS. Using a
+                backend in Express Js, integrating the PayPal API.
+              </p>
+              <button class="button-project">
+                <a href="#" target="_blank">Go to deployment</a>
+              </button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="./assets/challenge.png"
+                alt="project-img"
+                class="project-img"
+                data-aos-duration="2000"
+                data-aos="fade-right"
+              />
+            </div>
+            <div
+              class="project-description"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
+              <h3>Oracle One Encrypter</h3>
+              <p>
+                Encryptor created for Oracle One, using Html, Javascript and
+                CSS.
+              </p>
+              <button class="button-project">
+                <a
+                  href="https://hecabre.github.io/Challenge-Encriptador/"
+                  target="_blank"
+                  >Go to deployment</a
+                >
+              </button>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="./assets/calculator.png"
+                alt="project-img"
+                class="project-img"
+                data-aos-duration="2000"
+                data-aos="fade-right"
+              />
+            </div>
+            <div
+              class="project-description"
+              data-aos="fade-left"
+              data-aos-duration="2000"
+            >
+              <h3>Launch X Calculator</h3>
+              <p>
+                Calculator created with React, and tailwind for Microsoft's
+                Launch X project
+              </p>
+              <button class="button-project">
+                <a
+                  href="https://hecabre.github.io/Calculadora-Launch-X/"
+                  target="_blank"
+                  >Go to deployment</a
+                >
+              </button>
+            </div>
+          </div>
         </div>
       </section>
+      <div class="content" data-aos="fade-up" data-aos-duration="2000">
+        <h1 class="logo">Contact</h1>
+        <div class="contact-wrapper animated bounceInUp">
+          <div class="contact-form">
+            <h3>Contact Me</h3>
+            <form action="">
+              <p>
+                <label>FullName</label>
+                <input type="text" name="fullname" />
+              </p>
+              <p>
+                <label>Email Adress</label>
+                <input type="email" name="email" />
+              </p>
+              <p>
+                <label>Phone Number</label>
+                <input type="tel" name="phone" />
+              </p>
+              <p>
+                <label>Affair</label>
+                <input type="text" name="affair" />
+              </p>
+              <p class="block">
+                <label>Message</label>
+                <textarea name="message" rows="3"></textarea>
+              </p>
+              <p class="block">
+                <button>Send</button>
+              </p>
+            </form>
+          </div>
+          <div class="contact-info">
+            <h4>More Info</h4>
+            <ul>
+              <li>
+                <i class="fas fa-map-marker-alt"></i>Aaron Hernandez Cabrera
+              </li>
+              <li><i class="fas fa-phone"></i>+52 55 36095119</li>
+              <li>
+                <i class="fas fa-envelope-open-text"></i>
+                aaroncabrera046@gmail.com
+              </li>
+            </ul>
+            <p>
+              Contact Me and discover how I can help you with your needs! I'm
+              here to listen and provide the best possible solution. Fill out
+              the form and I'll be delighted to respond to your questions or
+              comments as soon as possible. Don't wait any longer, send your
+              message now!
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>

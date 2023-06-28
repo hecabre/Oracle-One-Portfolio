@@ -46,3 +46,11 @@ const redirectAbout = () => {
   const homeElement = document.querySelector(".about-title");
   homeElement.scrollIntoView({ behavior: "smooth" });
 };
+const redirectProjects = () => {
+  const projectElement = document.querySelector(".projects-title");
+  projectElement.scrollIntoView({ behavior: "smooth" });
+};
+const redirectContact = () => {
+  const aboutElement = document.querySelector("form");
+  aboutElement.scrollIntoView({ behavior: "smooth" });
+};
