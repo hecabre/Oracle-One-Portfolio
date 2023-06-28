@@ -497,6 +497,7 @@ header {
   }
   .dropdown_menu {
     display: block;
+    z-index: 2;
   }
   .person_img {
     background: url(./assets/profile.webp) no-repeat;
