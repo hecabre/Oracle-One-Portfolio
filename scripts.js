@@ -1,6 +1,7 @@
 //Skills images effect
 const imgSkills = document.getElementsByClassName("img-skill");
 const arrayImg = Array.from(imgSkills);
+//Get all the images
 arrayImg.forEach((img) => {
   img.addEventListener("mouseenter", () => {
     const positionImg = arrayImg.indexOf(img);
