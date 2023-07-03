@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400&display=swap"
       rel="stylesheet"
     />
+
     <script
       src="https://kit.fontawesome.com/ad7738c81d.js"
       crossorigin="anonymous"
@@ -20,10 +21,6 @@
       href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <meta
@@ -91,7 +88,7 @@
           data-aos-duration="2000"
         >
           <h1 class="title-text">
-            Hi, I'm Aaron <span class="professions">Front End Developer</span>
+            Hi, I'm Aaron <span class="professions"></span>
           </h1>
           <p class="descripition-text" id="descripition-text">
             Computer Engineering student at the National Polytechnic Institute.
@@ -263,7 +260,7 @@
           <div class="project-card">
             <div class="project-img">
               <img
-                src="./assets/palettewizard.png"
+                src="./assets/palettewizard.webp"
                 alt="project-img"
                 class="project-img"
                 data-aos-duration="2000"
@@ -288,7 +285,7 @@
           <div class="project-card">
             <div class="project-img">
               <img
-                src="./assets/challenge.png"
+                src="./assets/challenge.webp"
                 alt="project-img"
                 class="project-img"
                 data-aos-duration="2000"
@@ -317,7 +314,7 @@
           <div class="project-card">
             <div class="project-img">
               <img
-                src="./assets/calculator.png"
+                src="./assets/calculator.webp"
                 alt="project-img"
                 class="project-img"
                 data-aos-duration="2000"
@@ -404,5 +401,15 @@
       AOS.init();
     </script>
     <script src="./scripts.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      const typingEffect = new Typed(".professions", {
+        strings: ["FrontEnd Developer", "Student", "Web Developer"],
+        loop: true,
+        typeSpeed: 100,
+        backSpeed: 70,
+        backDelay: 1500,
+      });
+    </script>
   </body>
 </html>
